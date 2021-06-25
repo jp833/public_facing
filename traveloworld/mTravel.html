@@ -1,0 +1,96 @@
+<html>
+
+	<head>
+		<style>
+			html {
+			  min-height:100%;
+			  background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./2.jpg);
+			  background-size:cover;
+			  background-repeat: no-repeat;
+			  background-repeat:repeat-x;
+				background-attachment:fixed;
+				background-position: center;
+				position:absolute;
+				height:100%;
+				width: 100%;
+				margin:0;
+			}
+			body {
+				
+			}
+			#mainDiv {
+				height: 100%;
+				width: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
+				
+			}
+			#textContainer {
+				background-color: rgba(0,0,0,0);
+				padding: 20px;
+			}
+			#mainDiv p {
+				font-family: Verdana;
+				font-size: 40px;
+				font-style: normal;
+				font-weight: bold;
+				text-decoration: none;
+				text-transform: none;
+				color: #fff;
+			}
+			#company, #comingSoon {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-direction: row;
+			}
+			#icon {
+				margin: -40px;
+			}
+			#icon img {
+				color: white;
+				image-rendering: -moz-crisp-edges; /* Firefox */
+				image-rendering: -o-crisp-edges; /* Opera */
+				image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
+				image-rendering: crisp-edges;
+				-ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
+				height: 250px;
+				width: 250px;
+				margin-top: 20px;
+
+			}
+			#company p {
+				font-size: 80px;
+			}
+			#comingSoon p {
+				font-size: 60px;
+			}
+			#round {
+				position: absolute;
+				align-items: center;
+				opacity: .4;
+				z-index: -1;
+			}
+		</style>
+	</head>
+	<body>
+	
+		<div id="mainDiv"><div id="round">
+		<img src="./bg.png"></img> </div>
+			<div id="textContainer">
+			
+			<div id="company">
+				<p>Travel</p>
+				
+				<div id="icon"><img src="./location.png"></img> </div>
+				<p>World</p>
+			</div>
+			<div id="comingSoon">
+				<p>Coming Soon!</p>
+			</div>
+			</div>
+		</div>
+	</body>
+</html>
